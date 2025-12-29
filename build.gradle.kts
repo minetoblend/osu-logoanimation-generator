@@ -19,12 +19,14 @@ kotlin {
     macosArm64 {
         binaries.executable()
     }
+    linuxX64 {
+        binaries.executable()
+    }
 
     sourceSets {
         commonMain.dependencies {
             implementation(libs.clikt)
-            implementation("com.soywiz.korlibs.korim:korim:4.0.10")
-            implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.8.2")
+            implementation(libs.korlibs.korim)
             implementation(libs.mordant)
             implementation(libs.mordant.coroutines)
         }
