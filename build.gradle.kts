@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "2.2.21"
+    alias(libs.plugins.kotlinMultiplatform)
 }
 
 group = "com.hautzy.connecdoor"
